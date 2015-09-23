@@ -57,7 +57,7 @@ for k = 1:length(bounds)   % Go through each boundary
         elseif(curbounds(1) < intervals(ii,1) && curbounds(2) < intervals(ii,2)) % Offset in interval
             dur(ii) = curbounds(2)-intervals(ii,1);
          elseif(curbounds(1) > intervals(ii,1) && curbounds(2) > intervals(ii,2)) % Onset in interval
-            dur(ii) = intervals(ii,2)-curbounds(1);            
+            dur(ii) = intervals(ii,2)-curbounds(1);
          else % Not within interval at all
              dur(ii) = 0;
         end        
